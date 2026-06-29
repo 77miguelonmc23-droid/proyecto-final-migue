@@ -12,75 +12,101 @@
         }*/
 
         footer {
-            display: flex; /*coloca los elementos del footer uno al lado del otro*/
+            display: flex;
+            /*coloca los elementos del footer uno al lado del otro*/
         }
 
         .navegacion {
-            background-color: black; /*fondo de color negro*/
-            display: flex; /*hace el contenedor flexbox*/
-            justify-content: center; /*centra el contenido de forma horizontal*/
+            background-color: black;
+            /*fondo de color negro*/
+            display: flex;
+            /*hace el contenedor flexbox*/
+            justify-content: center;
+            /*centra el contenido de forma horizontal*/
         }
 
         body a {
-            text-decoration: none; /*le saca el subrayado a todos los enlaces*/
+            text-decoration: none;
+            /*le saca el subrayado a todos los enlaces*/
         }
-        h1{
+
+        h1 {
             font-family: sans-serif;
-            font-weight: 800;/*grosor de la letra */
+            font-weight: 800;
+            /*grosor de la letra */
         }
+
         /*.navegacion a {
             color: white;
         }*/
         header {
-            padding: 10px; /*espacio del interior*/
+            padding: 10px;
+            /*espacio del interior*/
             background-color: rgb(255, 255, 255);
-            color: rgb(0, 0, 0); /*le da color al texto*/
-            text-align: center; /*centra los elementos de forma vertical*/
+            color: rgb(0, 0, 0);
+            /*le da color al texto*/
+            text-align: center;
+            /*centra los elementos de forma vertical*/
             display: flex;
-            justify-content: space-between; /*separa los enlaces*/
+            justify-content: space-between;
+            /*separa los enlaces*/
             font-weight: 800;
         }
+
         header a {
             color: #f3dcd2;
         }
+
         header img {
-            width: 50px; /*define el ancho de la imagen*/
+            width: 50px;
+            /*define el ancho de la imagen*/
         }
+
         .contenedor {
             /* max-width: 1200px;*/
             width: 100%;
             display: flex;
-            flex-direction: column; /*coloca los elementos en columnas*/
+            flex-direction: column;
+            /*coloca los elementos en columnas*/
         }
+
         main {
             background-color: #FBF4F1;
         }
+
         .imgprincipal {
             width: 100px;
         }
+
         .contactodewats {
             display: flex;
             position: fixed;
         }
+
         .logoheader {
             display: flex;
         }
+
         .enlacesheader {
             gap: 10px;
             display: flex;
             align-items: center;
         }
+
         .enlacesheader a {
             transition: transform 0.3 ease;
             /*cambio suave*/
         }
+
         .enlacesheader a:hover {
             transform: scale(1.1);
             /*+10% de tamaño*/
         }
+
         .pricolorh1 {
             color: #D08A68;
         }
+
         .segcolorh1 {
             color: rgb(212, 165, 103);
         }
@@ -96,13 +122,15 @@
             color: white;
             background-color: #D08A68;
             padding: 10px;
-            border-radius: 100px; /*redondea las esquinas del elemento*/
+            border-radius: 100px;
+            /*redondea las esquinas del elemento*/
         }
 
         .conocermas {
             color: #D08A68;
             border-radius: 100px;
-            border: 1px solid #D08A68; /*hace un borde en el contenedor*/
+            border: 1px solid #D08A68;
+            /*hace un borde en el contenedor*/
             padding: 10px
         }
 
@@ -119,9 +147,12 @@
             gap: 30px;
             justify-content: center;
             align-items: center;
-            margin-top: 40px; /*hace que solo tenga margin definido arriba*/
-            padding-top: 35px; /*hace que solo tenga padding abajo*/
-            border-top: 1px solid rgba(0, 0, 0, 0.096); /*hace que tenga una linea negra abajo*/
+            margin-top: 40px;
+            /*hace que solo tenga margin definido arriba*/
+            padding-top: 35px;
+            /*hace que solo tenga padding abajo*/
+            border-top: 1px solid rgba(0, 0, 0, 0.096);
+            /*hace que tenga una linea negra abajo*/
         }
 
         .opinionesd {
@@ -131,7 +162,8 @@
         }
 
         .opinionesd strong {
-            font-size: 30px;/*define el tamaño del texto*/
+            font-size: 30px;
+            /*define el tamaño del texto*/
         }
 
         .misproductos {
@@ -221,37 +253,44 @@
             width: 100%;
 
         }
+
         .comprarbelleza {
             display: flex;
             justify-content: space-between;
         }
-        .contcursocuidadores img{
-           width: 100%; 
-           border-radius: 20px 20px 0 0;
+
+        .contcursocuidadores img {
+            width: 100%;
+            border-radius: 20px 20px 0 0;
         }
-        .contcursocuidadores{
+
+        .contcursocuidadores {
             background-color: rgb(250, 233, 211);
             border-radius: 0 0 20px 20px;
             padding-bottom: 10px;
         }
-        .estiloscuidadores a{
+
+        .estiloscuidadores a {
             color: #ffffff;
             background-color: #da8f69;
             border-radius: 25px;
             padding: 5px;
         }
-        .estiloscuidadores span{
+
+        .estiloscuidadores span {
             background-color: #f0b8929f;
             border-radius: 15px;
             padding: 5px;
         }
-        .contsyc h2{
+
+        .contsyc h2 {
             margin-bottom: 50px;
-border-color: black;
-border-bottom: 1px solid;
-padding: 25px;
+            border-color: black;
+            border-bottom: 1px solid;
+            padding: 25px;
         }
-        .btncomprarbelleza{
+
+        .btncomprarbelleza {
             background-color: #D08A68;
             color: white;
             display: flex;
@@ -259,30 +298,59 @@ padding: 25px;
             align-items: center;
             border-radius: 20px;
         }
-        .btncomprarbelleza a{
+
+        .btncomprarbelleza a {
             color: white;
         }
-        .bellezah2 h2{
-border-bottom: 2px solid;
-padding: 20px;
+
+        .bellezah2 h2 {
+            border-bottom: 2px solid;
+            padding: 20px;
         }
-        .cursococina img{
-width: 100%;
+
+        .cursococina img {
+            width: 100%;
         }
-        .contcocina h2{
+
+        .contcocina h2 {
             border-bottom: solid 1px black;
             padding: 20px;
         }
-        .cursococina a{
+
+        .cursococina a {
             background-color: #D08A68;
             padding: 10px;
             border-radius: 20px;
             color: white;
         }
-        .cursococina span{
+
+        .cursococina span {
             background-color: #cac6c6;
             padding: 5px;
             border-radius: 20px;
+        }
+
+        .logofooter img {
+            width: 50px;
+        }
+
+        .logofooter {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .comprarbelleza span{
+            font-family: sans-serif;
+            height: 800;
+            font-size:large;
+            color: #D08A68;
+        }
+        .contenedorbelleza{
+            margin: 20px;
+            background-color: aliceblue;
+            border-radius: 10px;
+            padding-bottom: 40px;
+            padding-top: 40px;
         }
     </style>
 </head>
@@ -294,12 +362,12 @@ width: 100%;
             <img src="imagenes/ChatGPT Image 23 jun 2026, 15_19_14.png" alt="logo">
             <p>Modo Emprende</p>
         </div>
-        <div class="enlacesheader">
+        <nav class="enlacesheader">
             <a href="#ebooks">Ebooks</a>
             <a href="#saludycuidados">Cursos</a>
             <a href="#">Nosotros</a>
             <a class="verproductosh" href="#ebooks">Ver productos</a>
-        </div>
+        </nav>
     </header>
     <main> <!--codigo principal-->
         <div class="contenedor"> <!-- contenedor flexbox -->
@@ -398,7 +466,7 @@ width: 100%;
                     </div>
                 </div>
             </section>
-            <section id="saludycuidado">
+            <section id="saludycuidados">
                 <div class="contsyc">
                     <div>CURSOS AFILIADOS</div>
                     <h2>Cursos digitales para cada área de tu vida 🎓</h2>
@@ -427,10 +495,11 @@ width: 100%;
                         <a href="">ver curso</a>
                     </div>
                 </div>
-                    <div class="contactodewats">
-                        <a href="https://wa.link/reekmy"> <img src="imagenes/social.png" alt=""> </a>
-                    </div>
-                    <!--  
+                <div class="contactodewats">
+                    <a href="https://wa.link/reekmy"> <img src="imagenes/social.png" alt="contacto"> </a>
+                </div>
+            </section>
+            <!--  
                         <aside>
                             <h3>menu</h3>
                             <form action="" method="post">
@@ -463,12 +532,12 @@ width: 100%;
     </main>
     <footer> <!--pie de pagina-->
         <section>
-        </section>
-        <section>
-            <!--  -->
-        </section>
-        <section>
-
+            <div>
+                <div class="logofooter">
+                    <img src="imagenes/ChatGPT Image 23 jun 2026, 15_19_14.png" alt="logo">
+                    <p>Modo Emprende</p>
+                </div>
+            </div>
         </section>
     </footer>
 </body>
