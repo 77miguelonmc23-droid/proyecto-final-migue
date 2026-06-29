@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>proyecto final</title>
     <style>
-        aside {
+        /* aside {
             padding: 20px;
             width: 250px;
-        }
+        }*/
 
         footer {
             display: flex;
@@ -21,20 +21,26 @@
             justify-content: center;
         }
 
-        .navegacion ul a {
+        body a {
             text-decoration: none;
         }
 
-        .navegacion a {
+        /*.navegacion a {
             color: white;
-        }
+        }*/
 
         header {
-            background-color: white;
-            color: white;
+            padding: 10px;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
             text-align: center;
             display: flex;
-            justify-content: flex-start;
+            justify-content: space-between;
+            font-weight: 800;
+        }
+
+        header a {
+            color: #f3dcd2;
         }
 
         header img {
@@ -42,11 +48,15 @@
         }
 
         .contenedor {
+            /* max-width: 1200px;*/
+            width: 100%;
             display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         main {
-            background-color: rgb(252, 243, 251);
+            background-color: #FBF4F1;
         }
 
         .imgprincipal {
@@ -57,52 +67,290 @@
             display: flex;
             position: fixed;
         }
+
+        .logoheader {
+            display: flex;
+        }
+
+        .enlacesheader {
+            gap: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .enlacesheader a {
+            transition: transform 0.3 ease;
+            /*cambio suave*/
+        }
+
+        .enlacesheader a:hover {
+            transform: scale(1.1);
+            /*+10% de tamaño*/
+        }
+
+        .pricolorh1 {
+            color: #D08A68;
+        }
+
+        .segcolorh1 {
+            color: rgb(212, 165, 103);
+        }
+
+        .verproductos {
+            color: white;
+            border-radius: 100px;
+            background-color: #D08A68;
+            padding: 10px;
+        }
+
+        .verproductosh {
+            color: white;
+            background-color: #D08A68;
+            padding: 10px;
+            border-radius: 100px;
+        }
+
+        .conocermas {
+            color: #D08A68;
+            border-radius: 100px;
+            border: 1px solid #D08A68;
+            padding: 10px
+        }
+
+        .brillo {
+            padding: 5px;
+            background-color: #f1c7b14b;
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .opiniones {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            padding-top: 35px;
+            border-top: 1px solid rgba(0, 0, 0, 0.096);
+        }
+
+        .opinionesd {
+            color: #D08A68;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .opinionesd strong {
+            font-size: 30px;
+        }
+
+        .misproductos {
+            color: #da8f69;
+        }
+
+        .alfajorfooter {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .hotmarkalfajor span {
+            color: #da8f69;
+            font-size: 30px;
+        }
+
+        .compraralfajor {
+            display: flex;
+            align-items: center;
+            border-radius: 100px;
+            padding: 10px;
+            background-color: #D08A68;
+        }
+
+        .compraralfajor a {
+            color: white;
+        }
+
+        .palfa {
+            color: rgb(85, 80, 80);
+        }
+
+        .primerebook {
+            background-color: rgb(255, 255, 255);
+            border-radius: 25px;
+            padding-bottom: 10px;
+
+        }
+
+        .primerebook img {
+            border-radius: 20px;
+            width: 100%;
+        }
+
+        .contenedorprieb {
+            background-color: #535353;
+            display: flex;
+            gap: 50px;
+        }
+
+        .segebook img {
+            width: 100%;
+            border-radius: 20px 20px 0 0;
+        }
+
+        .segebook {
+            background-color: white;
+            border-radius: 0 0 20px 20px;
+
+        }
     </style>
 </head>
 
 <body>
 
     <header> <!--encabezado-->
-        <img src="imagenes/ChatGPT Image 23 jun 2026, 15_19_14.png" alt="">
-
+        <div class="logoheader">
+            <img src="imagenes/ChatGPT Image 23 jun 2026, 15_19_14.png" alt="">
+            <p>Modo Emprende</p>
+        </div>
+        <div class="enlacesheader">
+            <a href="#ebooks">Ebooks</a>
+            <a href="#">Cursos</a>
+            <a href="#">Nosotros</a>
+            <a class="verproductosh" href="#">Ver productos</a>
+        </div>
     </header>
-    <h1>titulo principal</h1>
-    <nav class="navegacion">
-        <ul><a href="pagina2.html">2</a></ul>
-        <ul><a href="pagina3.html">3</a></ul>
-        <ul><a href="pagina4.html">4</a></ul>
-        <ul><a href="pagina5.html">5</a></ul>
-        <ul><a href="pagina6.html">6</a></ul>
-    </nav>
     <main> <!--codigo principal-->
         <div class="contenedor"> <!-- contenedor flexbox -->
             <div class="contenidoprincipal">
                 <img class="imgprincipal" src="imagenes/ChatGPT Image 23 jun 2026, 15_19_14.png" alt="">
-                <h2>✨EBOOKS & CURSOS DIGITALES</h2>
+                <div class="brillo">✨EBOOKS & CURSOS DIGITALES</div>
+                <h1>
+                    Ideas, Herramientas y <br><span class="pricolorh1">Productos Para</span> <span
+                        class="segcolorh1">Crecer Online</span>
+                </h1>
+                <p>Ebooks propios y cursos afiliados de hotmart para aprender, emprender y mejorar tu vida desde
+                    casa
+                </p>
                 <div>
-                    Ideas, Herramientas y Productos para Crecer Online
+                    <a class="verproductos" href="#ebooks">🛒ver todos los productos</a>
+                    <a class="conocermas" href="#">conocer mas →</a>
                 </div>
-                <div>
-                    <p>Ebooks propios y cursos afiliados de hotmart para aprender, emprender y mejorar tu vida desde
-                        casa
-                    </p>
+                <div class="opiniones">
+                    <div class="opinionesd">
+                        <strong>+1,200</strong><span>Clientes felices</span>
+                    </div>
+                    <div class="opinionesd">
+                        <strong>35+</strong><span>Productos digitales</span>
+                    </div>
+                    <div class="opinionesd">
+                        <strong>4.9★</strong><span>valoracion media</span>
+                    </div>
                 </div>
-                <button>🛒ver todos los productos</button>
             </div>
-            <section id="1" class="contenido">
-                <img src="" alt="">
+            <section id="ebooks" class="contenidoalfajor">
+
+                <div class="misproductos">mis productos</div>
+                <div>
+                    <h2>Ebooks propios 📚</h2>
+                    <p>Creados con amor, con recetas y guías probadas que realmente funcionan.</p>
+                </div>
+                <div class="contenedorprieb">
+                    <div class="primerebook">
+                        <img src="imagenes/2.jpeg" alt="Alfajores premium">
+                        <h3>Alfajores Premium</h3>
+                        <p class="palfa">Recetas exclusivas para crear alfajores irresistibles. Incluye bonus: 50
+                            Postres
+                            que Encantan.</p>
+                        <div class="alfajorfooter">
+                            <div class="hotmarkalfajor">
+                                disponible en <br><span>hotmart</span>
+                            </div>
+                            <div class="compraralfajor">
+                                <a href="https://go.hotmart.com/A105700187Q?dp=1" target="_blank">Comprar→</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="segebook">
+                        <img src="imagenes/21.jpeg" alt="">
+                        <h3>Panadería Libre de Gluten</h3>
+                        <p>Recetas deliciosas y saludables 100% libres de gluten. Incluye 2 bonos gratis.</p>
+                    </div>
+                </div>
             </section>
-            <section id="2" class="contenido">
-                <img src="" alt="">
+            <section id="bonos">
+                <div class="contenedorprieb">
+                    <div>regalos incluidos</div>
+                    <h2>Bonos gratis con Panadería sin Gluten 🎁</h2>
+                    <div class="primerebook">
+                        <img src="imagenes/24.jpeg" alt="bonos">
+                        <h3>🎁 Bono 1 - Guía de Errores al Hornear</h3>
+                        <p>Aprende a hornear sin gluten sin frustraciones</p>
+                    </div>
+                    <div class="segebook">
+
+                        <img src="imagenes/23.jpeg" alt="">
+                        <h3>🎁 Bono 2 - Gluten Oculto en el Supermercado</h3>
+                        <p>Aprende a leer etiquetas y proteger tu salud</p>
+                    </div>
+                </div>
             </section>
-            <section id="3" class="contenido">
-                <img src="" alt="">
+            <section id="belleza">
+                <div class="contenedorprieb">
+                    <div>
+                        <div>producto destacado</div>
+                        <h2>pack especial🌸</h2>
+                        <p>Transformá tu piel y bienestar con este pack exclusivo.</p>
+                    </div>
+                    <div class="primerebook">
+                        <img src="imagenes/1.jpeg" alt="">
+                        <h3>Megapack Belleza: Cuerpo, Piel y Mente</h3>
+                        <p>2 ebooks + 4 bonos exclusivos + 1 bono extra. Tu transformación empieza desde adentro y se
+                            refleja en tu piel.</p>
+                    </div>
+                    <div>
+                        <div>
+                            Precio especial <br><span>$9.99 USD</span>
+                        </div>
+                        <div>
+                            <a href="https://go.hotmart.com/E106401100W" target="_blank">Comprar→</a>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section id="4" class="contenido">
-                <img src="" alt="">
+            <section id="saludycuidado">
+                <div class="contenedorprieb">
+                    <div>CURSOS AFILIADOS</div>
+                    <h2>Cursos digitales para cada área de tu vida 🎓</h2>
+                    <div class="primerebook">
+                        <img src="" alt="">
+                        <h3>🎁 Bono 1 - Guía de Errores al Hornear</h3>
+                        <p>Aprende a hornear sin gluten sin frustraciones</p>
+                    </div>
+                    <div class="segebook">
+
+                        <img src="imagenes/23.jpeg" alt="">
+                        <h3>🎁 Bono 2 - Gluten Oculto en el Supermercado</h3>
+                        <p>Aprende a leer etiquetas y proteger tu salud</p>
+                    </div>
+                </div>
             </section>
             <section id="5" class="contenido">
-                <img src="" alt="">
+                <div class="contenedorprieb">
+                    <div>regalos incluidos</div>
+                    <div>Bonos gratis con Panadería sin Gluten 🎁</div>
+                    <div class="primerebook">
+                        <img src="imagenes/24.jpeg" alt="Alfajores premium">
+                        <h3>🎁 Bono 1 - Guía de Errores al Hornear</h3>
+                        <p>Aprende a hornear sin gluten sin frustraciones</p>
+                    </div>
+                    <div class="segebook">
+
+                        <img src="imagenes/23.jpeg" alt="">
+                        <h3>🎁 Bono 2 - Gluten Oculto en el Supermercado</h3>
+                        <p>Aprende a leer etiquetas y proteger tu salud</p>
+                    </div>
+                </div>
             </section>
             <section id="6" class="contenido">
                 <img src="" alt="">
@@ -147,15 +395,15 @@
                     <div class="contactodewats">
                         <a href="https://wa.link/reekmy"> <img src="imagenes/social.png" alt=""> </a>
                     </div>
-
-                    <aside>
-                        <h3>menu</h3>
-                        <form action="" method="post">
-                            encuentra lo que buscas
-                            <input type="text" placeholder="buscar...">
-                            <button type="submit">buscar</button>
-                        </form>
-                        <a href="#1"></a>
+                    <!--  
+                        <aside>
+                            <h3>menu</h3>
+                            <form action="" method="post">
+                                encuentra lo que buscas
+                                <input type="text" placeholder="buscar...">
+                                <button type="submit">buscar</button>
+                            </form>
+                            <a href="#1"></a>
                         <a href="#2"></a>
                         <a href="#3"></a>
                         <a href="#4"></a>
@@ -175,13 +423,14 @@
                         <a href="#18"></a>
                         <a href="#19"></a>
                     </aside>
+                    -->
         </div>
     </main>
     <footer> <!--pie de pagina-->
         <section>
         </section>
         <section>
-
+            <!--  -->
         </section>
         <section>
 
