@@ -25,7 +25,7 @@
             /*centra el contenido de forma horizontal*/
         }
 
-        body a {
+        a {
             text-decoration: none;
             /*le saca el subrayado a todos los enlaces*/
         }
@@ -63,24 +63,41 @@
         }
 
         .contenedor {
-            /* max-width: 1200px;*/
-            width: 100%;
+            max-width: 1200px;
+            width: 90%;
             display: flex;
             flex-direction: column;
             /*coloca los elementos en columnas*/
+            margin: auto;
         }
 
         main {
             background-color: #FBF4F1;
         }
 
+        .contenidoprincipal {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         .imgprincipal {
             width: 100px;
+            border-radius: 50px;
+            margin-bottom: 30px;
         }
 
         .contactodewats {
             display: flex;
             position: fixed;
+            bottom: 20px;
+            /*es el espacio que va a haber entre el limite de abajo y el elemnto*/
+            right: 10px;
+            /*es el espacio que va a haber entre el limite derecho y el elemento*/
+        }
+
+        .contactodewats img {
+            border: none;
         }
 
         .logoheader {
@@ -99,8 +116,8 @@
         }
 
         .enlacesheader a:hover {
-            transform: scale(1.1);
-            /*+10% de tamaño*/
+            transform: scale(1.3);
+            /*+30% de tamaño del tamaño original*/
         }
 
         .pricolorh1 {
@@ -159,6 +176,7 @@
             color: #D08A68;
             display: flex;
             flex-direction: column;
+            align-items: center;
         }
 
         .opinionesd strong {
@@ -173,6 +191,7 @@
         .alfajorfooter {
             display: flex;
             justify-content: space-between;
+            padding: 0 20px 20px 20px;
         }
 
         .hotmarkalfajor span {
@@ -199,59 +218,79 @@
         .primerebook {
             background-color: rgb(255, 255, 255);
             border-radius: 25px;
-            padding-bottom: 10px;
+
 
         }
 
         .primerebook img {
             border-radius: 20px;
             width: 100%;
+            height: 250px;
         }
 
         .contenedorprieb {
-            background-color: #535353;
             display: flex;
+            justify-content: center;
             gap: 50px;
+            margin-top: 35px;
+        }
+
+        main img {
+            border: 1px solid;
+            border-color: #D08A68;
         }
 
         .segebook img {
             width: 100%;
-            border-radius: 20px 20px 0 0;
+            height: 250px;
+            border-radius: 20px;
+            object-fit: cover;
         }
 
         .segebook {
             background-color: white;
-            border-radius: 0 0 20px 20px;
+            border-radius: 20px;
 
         }
 
         .primerbono {
             display: flex;
             flex-direction: column;
+            background-color: rgb(255, 255, 255);
+            border-radius: 20px;
+            margin: 20px;
+            padding: 20px;
         }
 
         .segbono {
-            display: flex;
-
+            background-color: white;
+            border-radius: 20px;
+            margin: 20px;
+            padding: 20px;
         }
 
         .primerbono img {
             width: 100%;
+            border-radius: 20px;
+
         }
 
         .segbono img {
             width: 100%;
+            border-radius: 20px;
         }
 
         .contenedorpriebono {
             background-color: rgb(252, 235, 219);
             display: flex;
             gap: 50px;
+            border-radius: 20px;
+
         }
 
         .belleza img {
             width: 100%;
-
+            border-radius: 20px;
         }
 
         .comprarbelleza {
@@ -261,20 +300,31 @@
 
         .contcursocuidadores img {
             width: 100%;
-            border-radius: 20px 20px 0 0;
+            border-radius: 20px;
+            margin-bottom: 10px;
         }
 
         .contcursocuidadores {
-            background-color: rgb(250, 233, 211);
+            background-color: rgb(255, 255, 255);
             border-radius: 0 0 20px 20px;
-            padding-bottom: 10px;
+            padding: 30px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .estiloscuidadores {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .estiloscuidadores a {
             color: #ffffff;
             background-color: #da8f69;
             border-radius: 25px;
-            padding: 5px;
+            padding: 15px;
         }
 
         .estiloscuidadores span {
@@ -288,6 +338,16 @@
             border-color: black;
             border-bottom: 1px solid;
             padding: 25px;
+        }
+
+        .contsyc h3 {
+            color: #D08A68;
+        }
+
+        #belleza {
+            background-color: white;
+            border-radius: 30px;
+            margin-bottom: 100px;
         }
 
         .btncomprarbelleza {
@@ -310,6 +370,7 @@
 
         .cursococina img {
             width: 100%;
+            border-radius: 20px;
         }
 
         .contcocina h2 {
@@ -339,18 +400,53 @@
             display: flex;
             justify-content: space-between;
         }
-        .comprarbelleza span{
+
+        .comprarbelleza span {
             font-family: sans-serif;
             height: 800;
-            font-size:large;
+            font-size: large;
             color: #D08A68;
         }
-        .contenedorbelleza{
+
+        .contenedorbelleza {
             margin: 20px;
-            background-color: aliceblue;
+            background-color: rgb(255, 255, 255);
             border-radius: 10px;
             padding-bottom: 40px;
             padding-top: 40px;
+        }
+
+        .bonos {
+            margin: 20px;
+        }
+
+        .rb {
+            color: #D08A68;
+        }
+
+        .centb {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        footer a {
+            color: rgba(0, 0, 0, 0.486);
+        }
+
+        .pad {
+            padding: 20px 20px 0 20px;
+        }
+
+        h2 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
     </style>
 </head>
@@ -370,7 +466,7 @@
         </nav>
     </header>
     <main> <!--codigo principal-->
-        <div class="contenedor"> <!-- contenedor flexbox -->
+        <div class="contenedor"> <!-- contenedor del codigo -->
             <div class="contenidoprincipal">
                 <img class="imgprincipal" src="imagenes/ChatGPT Image 23 jun 2026, 15_19_14.png" alt="logo">
                 <div class="brillo">✨EBOOKS & CURSOS DIGITALES</div>
@@ -407,10 +503,11 @@
                 <div class="contenedorprieb">
                     <div class="primerebook">
                         <img src="imagenes/2.jpeg" alt="Alfajores premium">
-                        <h3>Alfajores Premium</h3>
-                        <p class="palfa">Recetas exclusivas para crear alfajores irresistibles. Incluye bonus: 50
-                            Postres
-                            que Encantan.</p>
+                        <div class="pad">
+                            <h3>Alfajores Premium</h3>
+                            <p class="palfa">Recetas exclusivas para crear alfajores irresistibles. Incluye bonus: 50
+                                Postres que Encantan.</p>
+                        </div>
                         <div class="alfajorfooter">
                             <div class="hotmarkalfajor">
                                 disponible en <br><span>hotmart</span>
@@ -422,39 +519,54 @@
                     </div>
                     <div class="segebook">
                         <img src="imagenes/21.jpeg" alt="ebook y dos bonos">
-                        <h3>Panadería Libre de Gluten</h3>
-                        <p>Recetas deliciosas y saludables 100% libres de gluten. Incluye 2 bonos gratis.</p>
+                        <div class="pad">
+                            <h3>Panadería Libre de Gluten</h3>
+                            <p class="palfa">Recetas deliciosas y saludables 100% libres de gluten. Incluye 2 bonos
+                                gratis.</p>
+                        </div>
+                        <div class="alfajorfooter">
+                            <div class="hotmarkalfajor">
+                                disponible en <br><span>hotmart</span>
+                            </div>
+                            <div class="compraralfajor">
+                                <a href="https://go.hotmart.com/S105820197Y" target="_blank">comprar→</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
-            <section id="bonos">
-                <div>regalos incluidos</div>
+            <section id="bonos" class="bonos">
+                <p class="rb">regalos incluidos</p>
                 <h2>Bonos gratis con Panadería sin Gluten 🎁</h2>
                 <div class="contenedorpriebono">
                     <div class="primerbono">
                         <img src="imagenes/24.jpeg" alt="bono1">
                         <h3>🎁 Bono 1 - Guía de Errores al Hornear</h3>
-                        <p>Aprende a hornear sin gluten sin frustraciones</p>
+                        <p class="palfa">Aprende a hornear sin gluten sin frustraciones</p>
                     </div>
                     <div class="segbono">
                         <img src="imagenes/23.jpeg" alt="bono2">
                         <h3>🎁 Bono 2 - Gluten Oculto en el Supermercado</h3>
-                        <p>Aprende a leer etiquetas y proteger tu salud</p>
+                        <p class="palfa">Aprende a leer etiquetas y proteger tu salud</p>
                     </div>
                 </div>
             </section>
             <section id="belleza">
                 <div class="contenedorbelleza">
                     <div class="bellezah2">
-                        <div>producto destacado</div>
+                        <p class="rb">producto destacado</p>
                         <h2>pack especial🌸</h2>
                         <p>Transformá tu piel y bienestar con este pack exclusivo.</p>
                     </div>
                     <div class="belleza">
                         <img src="imagenes/1.jpeg" alt="belleza">
-                        <h3>Megapack Belleza: Cuerpo, Piel y Mente</h3>
-                        <p>2 ebooks + 4 bonos exclusivos + 1 bono extra. Tu transformación empieza desde adentro y se
-                            refleja en tu piel.</p>
+                        <div class="centb">
+                            <h3>Megapack Belleza: Cuerpo, Piel y Mente</h3>
+                            <p class="palfa">2 ebooks + 4 bonos exclusivos + 1 bono extra. Tu transformación empieza
+                                desde adentro y
+                                se
+                                refleja en tu piel.</p>
+                        </div>
                     </div>
                     <div class="comprarbelleza">
                         <div>
@@ -468,7 +580,7 @@
             </section>
             <section id="saludycuidados">
                 <div class="contsyc">
-                    <div>CURSOS AFILIADOS</div>
+                    <h3>CURSOS AFILIADOS</h3>
                     <h2>Cursos digitales para cada área de tu vida 🎓</h2>
                     <div class="contcursocuidadores">
                         <img src="imagenes/25.jpeg" alt="cuidadores">
@@ -477,7 +589,8 @@
                                 🏥 Salud & Cuidado
                             </span>
                             <h3>Cuidadores de Pacientes con Discapacidad</h3>
-                            <p>Aprende a brindar cuidado profesional y amoroso a personas con discapacidad.</p>
+                            <p class="palfa">Aprende a brindar cuidado profesional y amoroso a personas con
+                                discapacidad.</p>
                             <a href="https://go.hotmart.com/L105877341T?ap=8d37">ver curso</a>
                         </div>
                     </div>
@@ -489,16 +602,18 @@
                     <div></div>
                     <div class="cursococina">
                         <img src="imagenes/WhatsApp Image 2026-06-29 at 2.40.36 PM (8).jpeg" alt="">
-                        <span>👨‍👩‍👧 Familia & Cocina</span>
-                        <h3>Recetas Irresistibles para Niños sin Apetito</h3>
-                        <p>Recetas creativas y nutritivas para que tus hijos coman con alegría.</p>
-                        <a href="">ver curso</a>
+                        <div class="centb">
+                            <span>👨‍👩‍👧 Familia & Cocina</span>
+                            <h3>Recetas Irresistibles para Niños sin Apetito</h3>
+                            <p class="palfa">Recetas creativas y nutritivas para que tus hijos coman con alegría.</p>
+                            <a href="">ver curso</a>
+                        </div>
                     </div>
                 </div>
-                <div class="contactodewats">
-                    <a href="https://wa.link/reekmy"> <img src="imagenes/social.png" alt="contacto"> </a>
-                </div>
             </section>
+            <div class="contactodewats">
+                <a href="https://wa.link/reekmy"> <img src="imagenes/social.png" alt="contacto"> </a>
+            </div>
             <!--  
                         <aside>
                             <h3>menu</h3>
@@ -531,14 +646,17 @@
         </div>
     </main>
     <footer> <!--pie de pagina-->
-        <section>
-            <div>
-                <div class="logofooter">
-                    <img src="imagenes/ChatGPT Image 23 jun 2026, 15_19_14.png" alt="logo">
-                    <p>Modo Emprende</p>
-                </div>
-            </div>
-        </section>
+        <div class="logofooter">
+            <img src="imagenes/ChatGPT Image 23 jun 2026, 15_19_14.png" alt="logo">
+            <p>Modo Emprende</p>
+        </div>
+        <div>
+            <a href="reseñas.html">reseñas</a>
+            
+        </div>
+        <div>
+            © 2026 Modo Emprende. Todos los derechos reservados.
+        </div>
     </footer>
 </body>
 
